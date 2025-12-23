@@ -1,0 +1,286 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <title>JANE DOE | Full Stack Developer</title>
+    <!-- 
+        Note: While using a modern font is generally preferred for a modern look, 
+        embedding external fonts goes against "pure HTML with inline CSS". 
+        Therefore, standard web-safe fonts are used, styled heavily with CSS.
+    -->
+    <style>
+        /* BASE STYLES & RESET */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            font-weight: 700;
+            margin-top: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        /* HEADER & NAVIGATION */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+        }
+
+        nav .logo {
+            font-size: 1.5em;
+            font-weight: 900;
+            color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: #555;
+            font-weight: 600;
+            transition: color 0.3s;
+            padding: 10px 0;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER & NAVIGATION -->
+    <header style="background-color: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <nav style="display: flex; justify-content: space-between; align-items: center; height: 60px;">
+                <span class="logo" style="font-size: 1.5em; font-weight: 900; color: #1f2937;">JANE DOE</span>
+                <ul style="list-style: none; padding: 0; margin: 0; display: flex;">
+                    <li style="margin-left: 25px;"><a href="#about" style="color: #555; font-weight: 600;">About</a></li>
+                    <li style="margin-left: 25px;"><a href="#skills" style="color: #555; font-weight: 600;">Skills</a></li>
+                    <li style="margin-left: 25px;"><a href="#projects" style="color: #555; font-weight: 600;">Projects</a></li>
+                    <li style="margin-left: 25px;"><a href="#contact" style="color: #555; font-weight: 600;">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 1. HERO SECTION -->
+    <section id="hero" style="background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%); padding: 100px 0 120px; text-align: center;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <!-- Placeholder for Profile Image -->
+            <div style="width: 150px; height: 150px; background-color: #cccccc; border-radius: 50%; margin: 0 auto 30px; border: 5px solid #ffffff; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                <span style="display: block; line-height: 140px; font-size: 1.2em; color: #555;">Photo</span>
+            </div>
+
+            <h1 style="font-size: 3.5em; margin-bottom: 10px; color: #1f2937;">Hi, I'm Jane Doe</h1>
+            <p style="font-size: 1.8em; color: #007bff; font-weight: 300; margin-bottom: 40px;">
+                Full Stack Developer | Building scalable solutions with React and Node.js
+            </p>
+            <a href="#projects" style="background-color: #007bff; color: white; padding: 12px 30px; border-radius: 5px; font-weight: 600; font-size: 1.1em; transition: background-color 0.3s; display: inline-block;">
+                View My Work
+            </a>
+        </div>
+    </section>
+
+    <!-- 2. ABOUT SECTION -->
+    <section id="about" style="padding: 80px 0; background-color: #ffffff;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <h2 style="font-size: 2.5em; text-align: center; color: #1f2937; margin-bottom: 50px;">About Me</h2>
+            <div style="display: flex; gap: 40px; align-items: center;">
+                <div style="flex: 2;">
+                    <p style="font-size: 1.1em; color: #555;">
+                        I am a passionate Full Stack Developer with 5 years of experience delivering robust and efficient web applications. My expertise spans from crafting intuitive user interfaces to designing high-performance backend APIs. I thrive in challenging environments and am committed to continuous learning and utilizing the best modern development practices.
+                    </p>
+                    <p style="font-size: 1.1em; color: #555; margin-top: 20px;">
+                        Currently focusing on optimizing microservices architecture and integrating serverless technologies to reduce infrastructure overhead. I believe in writing clean, documented, and maintainable code that scales.
+                    </p>
+                </div>
+                <div style="flex: 1; text-align: right;">
+                    <a href="mailto:jane.doe@example.com" style="display: inline-block; background-color: #333; color: white; padding: 10px 20px; border-radius: 5px; margin-top: 10px;">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SKILLS SECTION -->
+    <section id="skills" style="padding: 80px 0; background-color: #f4f4f9;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <h2 style="font-size: 2.5em; text-align: center; color: #1f2937; margin-bottom: 50px;">Technical Skills</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                
+                <!-- Skill Category 1 -->
+                <div style="background-color: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 5px solid #007bff;">
+                    <h3 style="color: #007bff; margin-bottom: 15px;">Frontend</h3>
+                    <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px;">
+                        <li style="background-color: #e0f7fa; color: #007bff; padding: 8px 15px; border-radius: 4px; font-size: 0.9em;">React</li>
+                        <li style="background-color: #e0f7fa; color: #007bff; padding: 8px 15px; border-radius: 4px; font-size: 0.9em;">TypeScript</li>
+                        <li style="background-color: #e0f7fa; color: #007bff; padding: 8px 15px; border-radius: 4px; font-size: 0.9em;">Next.js</li>
+                        <li style="background-color: #e0f7fa; color: #007bff; padding: 8px 15px; border-radius: 4px; font-size: 0.9em;">HTML5 & CSS3</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div style="background-color: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 5px solid #28a745;">
+                    <h3 style="color: #28a745; margin-bottom: 15px;">Backend & Databases</h3>
+                    <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px;">
+                        <li style="background-color: #e6f7e9; color: #28a745; padding: 8px 15px; border-radius: 4px; font-size: 0.9em;">Node.js (Express)</li>
+                        <li style="background-color: #e6f7e9; color: #28a745; padding: 8px 15px; border-radius: 4px; font-size: 0.9em;">Python (Django)</li>
+                        <li style="background-color: #e6f7e9; color: #28a745; padding: 8px 15px; border-radius: 4px; font-size: 0.9em;">PostgreSQL</li>
+                        <li style="background-color: #e6f7e9; color: #28a745; padding: 8px 15px; border-radius: 4px; font-size: 0.9em;">MongoDB</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div style="background-color: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 5px solid #ffc107;">
+                    <h3 style="color: #d69900; margin-bottom: 15px;">DevOps & Tools</h3>
+                    <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px;">
+                        <li style="background-color: #fff9e6; color: #d69900; padding: 8px 15px; border-radius: 4px; font-size: 0.9em;">Docker</li>
+                        <li style="background-color: #fff9e6; color: #d69900; padding: 8px 15px; border-radius: 4px; font-size: 0.9em;">AWS (S3, Lambda)</li>
+                        <li style="background-color: #fff9e6; color: #d69900; padding: 8px 15px; border-radius: 4px; font-size: 0.9em;">Git/GitHub</li>
+                        <li style="background-color: #fff9e6; color: #d69900; padding: 8px 15px; border-radius: 4px; font-size: 0.9em;">CI/CD</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. PROJECTS SECTION -->
+    <section id="projects" style="padding: 80px 0; background-color: #ffffff;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <h2 style="font-size: 2.5em; text-align: center; color: #1f2937; margin-bottom: 50px;">Featured Projects</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                
+                <!-- Project 1 -->
+                <div style="background-color: #f9f9f9; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <div style="height: 200px; background-color: #cccccc; display: flex; align-items: center; justify-content: center; color: #555; font-size: 1.2em;">
+                        Project Image Placeholder 1
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="color: #1f2937; margin-bottom: 10px;">E-commerce Microservice Platform</h3>
+                        <p style="color: #555; font-size: 0.95em; margin-bottom: 15px;">
+                            Built a highly scalable platform using Node.js microservices, Kafka for asynchronous communication, and React frontend. Achieved 99.9% uptime.
+                        </p>
+                        <div style="margin-bottom: 15px;">
+                            <span style="display: inline-block; background-color: #e0f7fa; color: #007bff; padding: 5px 10px; border-radius: 4px; font-size: 0.8em; margin-right: 5px;">Node.js</span>
+                            <span style="display: inline-block; background-color: #e0f7fa; color: #007bff; padding: 5px 10px; border-radius: 4px; font-size: 0.8em;">React</span>
+                            <span style="display: inline-block; background-color: #e0f7fa; color: #007bff; padding: 5px 10px; border-radius: 4px; font-size: 0.8em;">Docker</span>
+                        </div>
+                        <a href="#" style="color: #007bff; font-weight: 600;">View Live Demo &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div style="background-color: #f9f9f9; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <div style="height: 200px; background-color: #cccccc; display: flex; align-items: center; justify-content: center; color: #555; font-size: 1.2em;">
+                        Project Image Placeholder 2
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="color: #1f2937; margin-bottom: 10px;">Data Visualization Dashboard</h3>
+                        <p style="color: #555; font-size: 0.95em; margin-bottom: 15px;">
+                            Interactive dashboard built with Next.js and integrated with D3.js for complex data rendering, fetching data via GraphQL endpoints.
+                        </p>
+                        <div style="margin-bottom: 15px;">
+                            <span style="display: inline-block; background-color: #e0f7fa; color: #007bff; padding: 5px 10px; border-radius: 4px; font-size: 0.8em; margin-right: 5px;">Next.js</span>
+                            <span style="display: inline-block; background-color: #e0f7fa; color: #007bff; padding: 5px 10px; border-radius: 4px; font-size: 0.8em;">GraphQL</span>
+                            <span style="display: inline-block; background-color: #e0f7fa; color: #007bff; padding: 5px 10px; border-radius: 4px; font-size: 0.8em;">D3.js</span>
+                        </div>
+                        <a href="#" style="color: #007bff; font-weight: 600;">View Codebase &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. CONTACT SECTION -->
+    <section id="contact" style="padding: 80px 0; background-color: #e0f7fa; text-align: center;">
+        <div class="container" style="max-width: 800px; margin: 0 auto; padding: 0 20px;">
+            <h2 style="font-size: 2.5em; color: #1f2937; margin-bottom: 20px;">Get In Touch</h2>
+            <p style="font-size: 1.2em; color: #555; margin-bottom: 40px;">
+                I'm currently available for freelance opportunities or full-time roles. Let's build something amazing together!
+            </p>
+
+            <form action="mailto:jane.doe@example.com" method="post" enctype="text/plain" style="max-width: 500px; margin: 0 auto; text-align: left; padding: 30px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                <div style="margin-bottom: 20px;">
+                    <label for="name" style="display: block; margin-bottom: 8px; font-weight: 600; color: #333;">Name:</label>
+                    <input type="text" id="name" name="name" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label for="email" style="display: block; margin-bottom: 8px; font-weight: 600; color: #333;">Email:</label>
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label for="message" style="display: block; margin-bottom: 8px; font-weight: 600; color: #333;">Message:</label>
+                    <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; resize: vertical;"></textarea>
+                </div>
+                <button type="submit" style="width: 100%; background-color: #007bff; color: white; padding: 12px; border: none; border-radius: 4px; font-size: 1.1em; cursor: pointer; transition: background-color 0.3s;">
+                    Send Message
+                </button>
+            </form>
+            
+            <div style="margin-top: 50px;">
+                <p style="font-size: 1.1em; color: #333; font-weight: 600;">Find me online:</p>
+                <div style="display: flex; justify-content: center; gap: 30px; margin-top: 15px;">
+                    <a href="https://linkedin.com/in/janedoe" target="_blank" style="color: #007bff; font-weight: 600;">LinkedIn</a>
+                    <a href="https://github.com/janedoe" target="_blank" style="color: #007bff; font-weight: 600;">GitHub</a>
+                    <a href="https://twitter.com/janedev" target="_blank" style="color: #007bff; font-weight: 600;">Twitter</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="background-color: #1f2937; color: #ffffff; text-align: center; padding: 20px 0;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <p style="margin: 0;">&copy; 2024 Jane Doe. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+```

@@ -1,0 +1,167 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Sterling - Full Stack Developer</title>
+</head>
+<body style="font-family: 'Helvetica Neue', sans-serif; margin: 0; padding: 0; background-color: #f4f7fa; color: #333;">
+
+    <!-- Navigation Bar -->
+    <header style="background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.05); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100;">
+        <h1 style="margin: 0; font-size: 1.5em; color: #007bff; font-weight: 700;">Alex Sterling</h1>
+        <nav>
+            <a href="#hero" style="color: #333; text-decoration: none; margin-left: 25px; font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='#007bff'" onmouseout="this.style.color='#333'">Home</a>
+            <a href="#about" style="color: #333; text-decoration: none; margin-left: 25px; font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='#007bff'" onmouseout="this.style.color='#333'">About</a>
+            <a href="#skills" style="color: #333; text-decoration: none; margin-left: 25px; font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='#007bff'" onmouseout="this.style.color='#333'">Skills</a>
+            <a href="#projects" style="color: #333; text-decoration: none; margin-left: 25px; font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='#007bff'" onmouseout="this.style.color='#333'">Projects</a>
+            <a href="#contact" style="color: #333; text-decoration: none; margin-left: 25px; font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='#007bff'" onmouseout="this.style.color='#333'">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+        
+        <!-- Hero Section -->
+        <section id="hero" style="padding: 100px 0; text-align: center; background-color: #ffffff; border-radius: 8px; margin-bottom: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+            <div style="width: 150px; height: 150px; background-color: #ddd; border-radius: 50%; margin: 0 auto 20px; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 3em; color: #666; font-weight: 600;">
+                AS
+                <!-- Placeholder for Image -->
+            </div>
+            <h2 style="font-size: 3.5em; margin: 0 0 10px; color: #2c3e50;">Alex Sterling</h2>
+            <p style="font-size: 1.5em; color: #007bff; font-weight: 300; margin-bottom: 30px;">Full Stack Developer & Systems Architect</p>
+            <a href="#projects" style="background-color: #007bff; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: 600; display: inline-block; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#0056b3'" onmouseout="this.style.backgroundColor='#007bff'">View My Work</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" style="padding: 60px 5%; background-color: #ffffff; border-radius: 8px; margin-bottom: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+            <h3 style="font-size: 2.2em; border-bottom: 3px solid #007bff; padding-bottom: 10px; margin-bottom: 30px; display: inline-block;">About Me</h3>
+            <p style="line-height: 1.8; font-size: 1.1em; color: #555;">
+                I am a passionate Full Stack Developer with 7 years of experience building scalable, performance-driven web applications. My expertise lies in bridging the gap between elegant design and robust backend architecture. I thrive in dynamic environments and am committed to clean code, continuous learning, and delivering impactful solutions that solve real-world problems. Currently focusing on modernizing legacy systems using microservices architecture.
+            </p>
+            <p style="line-height: 1.8; font-size: 1.1em; color: #555;">
+                When I'm not coding, I enjoy hiking and exploring new coffee brewing techniques.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" style="padding: 60px 5%; margin-bottom: 40px;">
+            <h3 style="font-size: 2.2em; border-bottom: 3px solid #007bff; padding-bottom: 10px; margin-bottom: 30px; display: inline-block; color: #2c3e50;">Technical Skills</h3>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                
+                <!-- Frontend Column -->
+                <div style="background-color: #ffffff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                    <h4 style="color: #007bff; margin-top: 0; font-size: 1.5em;">Frontend</h4>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li style="padding: 8px 0; border-bottom: 1px dashed #eee;">React, Redux, Context API</li>
+                        <li style="padding: 8px 0; border-bottom: 1px dashed #eee;">JavaScript (ES6+), TypeScript</li>
+                        <li style="padding: 8px 0; border-bottom: 1px dashed #eee;">HTML5, CSS3, Tailwind CSS</li>
+                        <li style="padding: 8px 0;">Responsive Design & Performance Optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Backend Column -->
+                <div style="background-color: #ffffff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                    <h4 style="color: #007bff; margin-top: 0; font-size: 1.5em;">Backend</h4>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li style="padding: 8px 0; border-bottom: 1px dashed #eee;">Node.js, Express.js</li>
+                        <li style="padding: 8px 0; border-bottom: 1px dashed #eee;">Python (Django, Flask)</li>
+                        <li style="padding: 8px 0; border-bottom: 1px dashed #eee;">REST APIs, GraphQL</li>
+                        <li style="padding: 8px 0;">Authentication (OAuth, JWT)</li>
+                    </ul>
+                </div>
+                
+                <!-- DevOps/Database Column -->
+                <div style="background-color: #ffffff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                    <h4 style="color: #007bff; margin-top: 0; font-size: 1.5em;">DevOps & DB</h4>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li style="padding: 8px 0; border-bottom: 1px dashed #eee;">PostgreSQL, MongoDB</li>
+                        <li style="padding: 8px 0; border-bottom: 1px dashed #eee;">Docker, Kubernetes Basics</li>
+                        <li style="padding: 8px 0; border-bottom: 1px dashed #eee;">AWS (EC2, S3, Lambda)</li>
+                        <li style="padding: 8px 0;">Git & CI/CD Pipelines</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" style="padding: 60px 5%; background-color: #ffffff; border-radius: 8px; margin-bottom: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+            <h3 style="font-size: 2.2em; border-bottom: 3px solid #007bff; padding-bottom: 10px; margin-bottom: 30px; display: inline-block;">Featured Projects</h3>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+
+                <!-- Project 1 -->
+                <div style="border: 1px solid #eee; border-radius: 8px; overflow: hidden; transition: transform 0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.05);" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="height: 200px; background-color: #a0c4ff; display: flex; align-items: center; justify-content: center; font-size: 1.5em; color: white;">
+                        (App UI Preview)
+                    </div>
+                    <div style="padding: 20px;">
+                        <h4 style="margin-top: 0; color: #2c3e50; font-size: 1.4em;">Microservice Analytics Dashboard</h4>
+                        <p style="font-size: 0.9em; color: #777; margin-bottom: 15px;">Tech: React, Node.js, PostgreSQL, Docker</p>
+                        <p style="line-height: 1.6;">
+                            A real-time data visualization tool for tracking API performance across 10+ microservices. Reduced latency detection time by 40%.
+                        </p>
+                        <a href="#" style="color: #007bff; text-decoration: none; font-weight: 600; font-size: 0.9em;">View Demo &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div style="border: 1px solid #eee; border-radius: 8px; overflow: hidden; transition: transform 0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.05);" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="height: 200px; background-color: #b8b8ff; display: flex; align-items: center; justify-content: center; font-size: 1.5em; color: white;">
+                        (E-commerce Mockup)
+                    </div>
+                    <div style="padding: 20px;">
+                        <h4 style="margin-top: 0; color: #2c3e50; font-size: 1.4em;">Modern E-commerce Platform</h4>
+                        <p style="font-size: 0.9em; color: #777; margin-bottom: 15px;">Tech: Next.js, TypeScript, Stripe, MongoDB</p>
+                        <p style="line-height: 1.6;">
+                            A fully featured e-commerce site with integrated payment processing and robust inventory management system.
+                        </p>
+                        <a href="#" style="color: #007bff; text-decoration: none; font-weight: 600; font-size: 0.9em;">View Code &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" style="padding: 60px 5%; text-align: center; background-color: #e3f2fd; border-radius: 8px;">
+            <h3 style="font-size: 2.2em; color: #2c3e50; margin-bottom: 20px;">Get In Touch</h3>
+            <p style="font-size: 1.1em; color: #555; margin-bottom: 30px;">
+                I am currently open to new opportunities and collaboration. Feel free to reach out!
+            </p>
+
+            <form style="max-width: 600px; margin: 0 auto; text-align: left;">
+                <div style="margin-bottom: 15px;">
+                    <label for="name" style="display: block; margin-bottom: 5px; font-weight: 600;">Name</label>
+                    <input type="text" id="name" name="name" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="email" style="display: block; margin-bottom: 5px; font-weight: 600;">Email</label>
+                    <input type="email" id="email" name="email" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label for="message" style="display: block; margin-bottom: 5px; font-weight: 600;">Message</label>
+                    <textarea id="message" name="message" rows="5" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; resize: vertical;"></textarea>
+                </div>
+                <button type="submit" style="width: 100%; background-color: #007bff; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 1.1em; font-weight: 600; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#0056b3'" onmouseout="this.style.backgroundColor='#007bff'">Send Message</button>
+            </form>
+
+            <div style="margin-top: 30px;">
+                <p style="font-weight: 600; color: #333;">Or connect directly:</p>
+                <a href="mailto:alex@example.com" style="color: #007bff; text-decoration: none; margin: 0 15px;">Email</a> |
+                <a href="#" style="color: #007bff; text-decoration: none; margin: 0 15px;">LinkedIn</a> |
+                <a href="#" style="color: #007bff; text-decoration: none; margin: 0 15px;">GitHub</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 20px 0; background-color: #2c3e50; color: #ecf0f1; font-size: 0.9em; margin-top: 40px;">
+        <p style="margin: 0;">&copy; 2024 Alex Sterling. Built with Pure HTML & Inline CSS.</p>
+    </footer>
+
+</body>
+</html>
+```
